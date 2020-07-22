@@ -8,7 +8,7 @@ while(!Number.isInteger(m) || m === '' || m<=n) {
     alert('Entered value is not an integer or you put some "Space" or even M less than N! Pay Attention!')
     m = +prompt ("Enter an Integer M bigger than N");
 }
-const answerBoolean = confirm(`Do you want to skip even numbers?`);
+const answerBoolean = confirm(`Do you want to skip paired numbers?`);
 
 let sum = 0;
     for(let i = n; i <= m; i++){
@@ -16,12 +16,12 @@ let sum = 0;
         sum += i;
     } 
 
-console.log(`Number N = ${n}, Number M = ${m}, Do you want to skip even numbers? = ${answerBoolean}, Sum of Numbers = ${sum}`);
+console.log(`Number N = ${n}, Number M = ${m}, Do you want to skip paired numbers? = ${answerBoolean}, Sum of Numbers = ${sum}`);
 
 document.write('<pre>');
 
 document.writeln("N =" + n);
 document.writeln("M =" + m);
-document.writeln("Do you want to skip even numbers? " + answerBoolean);
+document.writeln("Do you want to skip paired numbers? " + answerBoolean);
 document.writeln("Sum is :" + sum);
 
