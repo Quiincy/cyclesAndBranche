@@ -1,10 +1,10 @@
 let n = +prompt("Enter an Integer N");
-while(!Number.isInteger(n) || n === '') {
+while(!Number.isInteger(n) || n == '') {
     alert('Entered value is not an integer or you put in some "SPACE"! Try again my friend!'); 
     n = +prompt("Enter an Integer");
 }
 let m = +prompt ("Enter an Integer M bigger than N");
-while(!Number.isInteger(m) || m === '' || m<=n) {
+while(!Number.isInteger(m) || m == '' || m<=n) {
     alert('Entered value is not an integer or you put some "Space" or even M less than N! Pay Attention!')
     m = +prompt ("Enter an Integer M bigger than N");
 }
